@@ -1,18 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 
-const links = [{
-  label: 'Home',
-  route: '/'
-}, {
-  label: 'team',
-  route: '/team'
-}, {
-  label: 'naves',
-  route: '/'
-}]
-
-const inter = In  ter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
