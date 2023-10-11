@@ -1,16 +1,27 @@
-import Image from 'next/image'
-import Header from '../components/header/page'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import Principal from '@/components/Principal'
+import News from '@/components/News'
 
 export default function Home() {
   return (
     <div>
+
     <header >
       <Header></Header>
     </header>
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+
+    <main>
+      <Principal>
+        <News></News>
+      </Principal>
       
     </main>
-    <footer>FOOTER</footer>
+
+    <footer>
+      <Footer></Footer>
+    </footer>
+
     </div>
   )
 }
