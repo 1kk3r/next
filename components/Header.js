@@ -13,6 +13,8 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import Evo from './images/EVO.png'
+import Link from 'next/link';
+
 
 const products = [
   { name: 'Ofertas de la Semana', description: 'Ofertas diferentes toda la semana!', href: '#', icon: ChartPieIcon },
@@ -38,7 +40,7 @@ export default function Header() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
           <a href="" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">Mi Compañia</span>
             <img className="h-8 w-auto" src={Evo}/>
           </a>
         </div>
@@ -104,15 +106,15 @@ export default function Header() {
             </Transition>
           </Popover>
 
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <Link href="/comunidad" className="text-sm font-semibold leading-6 text-gray-900">
             Comunidad
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          </Link>
+          <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Marketplace
-          </a>
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          </Link>
+          <Link href="#" className="text-sm font-semibold leading-6 text-gray-900">
             Nosotros
-          </a>
+          </Link>
         </Popover.Group>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
